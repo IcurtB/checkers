@@ -19,11 +19,6 @@ export const Chip = ({
     dispatch(
       changeMatrix({ id: id - 1, rowId: `row${rowId}` as keyof MatrixModels })
     );
-    console.log(MATRIX)
-    // console.log("----");
-    // console.log(id, MATRIX[`row${rowId + 1}` as keyof MatrixModels][id]);
-    // console.log("----");
-    // console.log(id, "/", MATRIX[`row${rowId + 1}` as keyof MatrixModels]);
   };
   return (
     <Box

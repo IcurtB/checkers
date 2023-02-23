@@ -16,9 +16,9 @@ export const Chip = ({
   const ID = `${rowId}${id + 1}`;
   const getCurrentChip = () => {
     dispatch(setChipId({ color, id: ID, figureIs }));
-    dispatch(
-      changeMatrix({ id: id - 1, rowId: `row${rowId}` as keyof MatrixModels })
-    );
+    // dispatch(
+    //   // changeMatrix({ id: id - 1, rowId: `row${rowId}` as keyof MatrixModels })
+    // );
     console.log(MATRIX)
     // console.log("----");
     // console.log(id, MATRIX[`row${rowId + 1}` as keyof MatrixModels][id]);

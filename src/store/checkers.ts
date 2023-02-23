@@ -29,12 +29,7 @@ const checkers = createSlice({
     setChipId(state, { payload }: PayloadAction<ChipsModel>) {
       state.id = `${payload.figureIs}-${payload.color}-${payload.id}`;
     },
-    changeMatrix(
-      state,
-      { payload }: PayloadAction<{ id: number; rowId: keyof MatrixModels }>
-    ) {
-      const { id, rowId } = payload;
-
+    changeMatrix() {
       // state.matrix[rowId][id] = 0;
     },
   },
